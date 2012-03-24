@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 #上一句用來宣告執行script用的shell
 
 #Shell script名稱：Snap_left
@@ -19,10 +19,10 @@ WIDTH_OFFSET=7
 WIDTH=`xdpyinfo | grep 'dimensions:' | cut -f 2 -d ':' | cut -f 1 -d 'x'` #於1920x1080解析度底下應取得1920
 WIDTH_HALF=$(($WIDTH/2)) #於1920x1080解析度底下應得到960
 
-##將作用中的視窗寬度、高度接自當前解析度的最大值取消（若有的話）
+##將作用中的視窗屬性取消掉（若有的話）
 wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
 
-##將作用中的視窗的高度調整為幕前解析度的最大高度
+##將作用中的視窗的高度調整為目前解析度的最大高度
 wmctrl -r :ACTIVE: -b add,maximized_vert
 
 ##將作用中的視窗的座標調至左上角並將視窗的寬度調整為解析度最大寬度的一半（扣去偏移量）

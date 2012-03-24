@@ -20,7 +20,7 @@ WIDTH_HALF=$(($WIDTH/2))
 ##將作用中的視窗寬度、高度接自當前解析度的最大值取消（若有的話）
 wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
 
-##將作用中的視窗的高度調整為幕前解析度的最大高度
+##將作用中的視窗的高度調整為目前解析度的最大高度
 wmctrl -r :ACTIVE: -b add,maximized_vert
 
 ##將作用中的視窗的座標調至畫面右半部的第一個像素(pixel)並將視窗的寬度調整為解析度最大寬度的一半（扣去偏移量）

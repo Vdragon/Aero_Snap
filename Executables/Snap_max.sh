@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 #上一句用來宣告執行script用的shell
 
 #Shell script名稱：Snap_max
