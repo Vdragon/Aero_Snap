@@ -1,0 +1,23 @@
+Aero_Snap
+用來讓Linux支援類似Windows 7的Aero Snap功能的Shell Script。
+Shell Script to let Linux support Aero Snap feature introduced in Microsoft Windows 7
+
+依賴軟體套件：
+Software package dependencies:
+--in Ubuntu --
+compizconfig-settings-manager
+wmctrl
+
+如何安裝：
+How to install:
+
+--於Ubuntu 10.04 LTS測試通過，應相容於其更新版本 | tested in Ubuntu 10.04 LTS, should be compatible with its newer versions--
+1.Copy the Shell Script files in the "Executables" directory to the place you want(in my testcase I copy them into a new folder in my home directory.
+
+2.Execute CompizConfig Settings Manager, activate "Commands" plugin and click into its page.
+
+3.In the "Commands" tab page, copy following command to any of the blank "Command line" textbox( replace the 「path_of_the_shell_script」 stuff with the full directory of the shell script.), when finish, there should be additional 3 commands in this tab page.
+bash "「path_of_the_shell_script」"
+
+(to be continued)
+
