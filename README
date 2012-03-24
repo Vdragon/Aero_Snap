@@ -2,6 +2,11 @@
 用來讓Linux支援類似Windows 7的Aero Snap功能的Shell Script。
 Shell Script to let Linux support Aero Snap feature introduced in Microsoft Windows 7
 
+支援環境：
+Supported Environment:
+Any compiz-based desktop environment should support with following install method(though not formally tested).
+
+
 依賴軟體套件：
 Software package dependencies:
 --in Ubuntu --
