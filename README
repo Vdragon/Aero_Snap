@@ -33,4 +33,5 @@ bash "「path_of_the_shell_script」"
 
 已知問題：
 Known Issues:
-1.In Ubuntu 10.04 LTS, the screen edge event couldn't activate due to unknown reason(possibly ccsm's bug).
+1.In Ubuntu 10.04 LTS, the screen edge event couldn't activate due to unknown reason(possibly ccsm's bug). (Issue #2 )
+2.無法於Unity 3D正常運作。(Issue #1 )
