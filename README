@@ -1,4 +1,4 @@
-Aero_Snap
+﻿Aero_Snap
 用來讓Linux支援類似Windows 7的Aero Snap功能的Shell Script。
 Shell Script to let Linux support Aero Snap feature introduced in Microsoft Windows 7
 
@@ -19,5 +19,9 @@ How to install:
 3.In the "Commands" tab page, copy following command to any of the blank "Command line" textbox( replace the 「path_of_the_shell_script」 stuff with the full directory of the shell script.), when finish, there should be additional 3 commands in this tab page.
 bash "「path_of_the_shell_script」"
 
-(to be continued)
+4.In the other pages, set events to activate the previous setted commands.
 
+
+已知問題：
+Known Issues:
+1.In Ubuntu 10.04 LTS, the screen edge event couldn't activate due to unknown reason(possibly ccsm's bug).
