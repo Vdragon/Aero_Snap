@@ -13,7 +13,6 @@ Any compiz-based desktop environment should support with following install metho
 依賴軟體套件：
 Software package dependencies:
 --in Ubuntu --
-compizconfig-settings-manager
 wmctrl
 
 如何安裝：
@@ -23,7 +22,7 @@ How to install:
 -for GNOME 2-
 1.Copy the Shell Script files in the "Executables" directory to the place you want(in my testcase I copy them into a new folder in my home directory.
 
-2.Execute CompizConfig Settings Manager, activate "Commands" plugin and click into its page.
+2.(Install &) Execute CompizConfig Settings Manager, activate "Commands" plugin and click into its page.
 
 3.In the "Commands" tab page, copy following command to any of the blank "Command line" textbox( replace the 「path_of_the_shell_script」 stuff with the full directory of the shell script.), when finish, there should be additional 3 commands in this tab page.
 bash "「path_of_the_shell_script」"
