@@ -24,7 +24,7 @@ How to install:
 -for compiz-based desktop environment(including GNOME 2, Unity3D, Unity2d...etc)-
 1.Copy the Shell Script files in the "Executables" directory to any place you want, make sure you have read permission of the files.
 
-2.(Install &) Execute CompizConfig Settings Manager("ccsm" software package in ubuntu), activate "Commands" plugin and click into its setting page.
+2.(Install &) Execute CompizConfig Settings Manager("compizconfig-settings-manager" software package in ubuntu), activate "Commands" plugin and click into its setting page.
 
 3.In the "Commands" setting page, copy following command to any of the blank "Command line" textbox( replace the 「path_of_the_shell_script」 stuff with the full directory of the shell script.), when finish, there should be additional 3 commands in this tab page.
 bash "「path_of_the_shell_script」"
