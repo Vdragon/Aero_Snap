@@ -6,9 +6,12 @@ Shell Script to let Linux support Aero Snap feature introduced in Microsoft Wind
 This shell script is enhanced and based on Joey Sneddon's article "Get Aero Snap in Ubuntu" on OMG! Ubuntu!.
 http://www.omgubuntu.co.uk/2009/11/get-aero-snap-in-ubuntu/
 
-支援環境：
-Supported Environment:
-Any compiz-based desktop environment should support with following install method(though not formally tested).
+支援的桌面環境：
+Supported Desktop Environment:
+Any desktop environment with an X Window manager that is compatible with the EWMH/NetWM specification that provides a way to execute a script using key combination or screen edge trigger.
+
+Tested in KDE, xfce, Unity2D, GNOME2...
+(the utility to configure script trigger in different desktop environment may be different)
 
 依賴軟體套件：
 Software package dependencies:
@@ -18,19 +21,28 @@ wmctrl
 如何安裝：
 How to install:
 
---於Ubuntu 10.04 LTS測試通過，應相容於其更新版本 | tested in Ubuntu 10.04 LTS, should be compatible with its newer versions--
--for GNOME 2-
-1.Copy the Shell Script files in the "Executables" directory to the place you want(in my testcase I copy them into a new folder in my home directory.
+-for compiz-based desktop environment(including GNOME 2, Unity3D, Unity2d...etc)-
+1.Copy the Shell Script files in the "Executables" directory to any place you want, make sure you have read permission of the files.
 
-2.(Install &) Execute CompizConfig Settings Manager, activate "Commands" plugin and click into its page.
+2.(Install &) Execute CompizConfig Settings Manager("ccsm" software package in ubuntu), activate "Commands" plugin and click into its setting page.
 
-3.In the "Commands" tab page, copy following command to any of the blank "Command line" textbox( replace the 「path_of_the_shell_script」 stuff with the full directory of the shell script.), when finish, there should be additional 3 commands in this tab page.
+3.In the "Commands" setting page, copy following command to any of the blank "Command line" textbox( replace the 「path_of_the_shell_script」 stuff with the full directory of the shell script.), when finish, there should be additional 3 commands in this tab page.
 bash "「path_of_the_shell_script」"
 
-4.In the other pages, set events to activate the previous setted commands.
+example: 
+bash "/home/Vdragon/Software/Aero_snap/Snap_max.sh"
+
+4.In the other pages, set keyboards or screen edge trigger events to activate the previous set commands.
+
+
+使用者設定選項
+User configurations
+-in Snap_left.sh, Snap_right.sh-
+用來扣掉視窗裝飾所帶來的多餘寬度所使用的偏移量（單位：像素(pixel)）
+WIDTH_OFFSET
 
 
 已知問題：
 Known Issues:
-1.In Ubuntu 10.04 LTS, the screen edge event couldn't activate due to unknown reason(possibly ccsm's bug). (Issue #2 )
+1.In Ubuntu 10.04 LTS, the screen edge trigger event couldn't activate due to unknown reason(possibly ccsm's bug). (Issue #2 )
 2.無法於Unity 3D正常運作。(Issue #1 )
