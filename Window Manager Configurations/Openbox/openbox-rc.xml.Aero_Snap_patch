@@ -1,0 +1,16 @@
+    <!-- Aero Snap 按鍵組合設定 -->
+    <keybind key="W-Left">
+      <action name="Execute">
+        <command><path to Aero Snap software root directory>/Executables/Snap_left.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="Execute">
+        <command><path to Aero Snap software root directory>/Executables/Snap_right.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="Execute">
+        <command><path to Aero Snap software root directory>/Executables/Snap_max.sh</command>
+      </action>
+    </keybind>
